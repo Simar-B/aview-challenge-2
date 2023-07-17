@@ -12,6 +12,8 @@
 - Create a lambda function that uses the docker image that was uploaded to the ECR repo as the source, make sure it has permission to access Parameter Store
 - Create a function url for the lambda after it is created
 
+**Note** the lambda function returns the joke that was retreived from the API. So, you can check that the joke that was returned was inserted into the database.
+
 ## Test
 - Trigger the lambda by sending an http request to the function url
 - You can check the Firestore database for the joke to be inserted
